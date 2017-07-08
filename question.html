@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Insert title here</title>
+
+	<link rel="stylesheet" href="layer/skin/layer.css" />
+	<link rel="stylesheet" href="layer/skin/layer.ext.css" />
+	<link rel="stylesheet" type="text/css" href="layer/question.css">
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="layer/layer.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			// var loginId = $.param("loginId");
+
+			$("#btn").click(function(event) {
+				/* Act on the event */
+				var question =$(".question").val();
+				
+				console.log(question);
+				$.post("/IMOOC/AddQuestionServlet",{
+					// loginId:loginId,
+					question:question
+				},function(data){
+					window.parent.layer.closeAll();
+				});
+			});
+
+			$(".btn-success").click(function(){
+				window.parent.layer.closeAll();
+			});
+		})
+	</script>
+
+</head>
+<body>
+
+	<div class="container">
+		<div class="breadcrumb">
+			<a href="javascript:void(0)">社区</a>
+			&nbsp;/&nbsp;
+			<a href="javascript:void(0)">全部问答</a>		
+			&nbsp;/&nbsp;
+			<span>最新问题</span>
+		</div>
+	
+		<textarea rows="5" cols="39" name="question" class = 'question'></textarea>
+		<br/>
+		<input type="button" value="提交" width="30px" id="btn" class="btn-success"/>
+
+	</div>
+
+
+
+</body>
+</html>

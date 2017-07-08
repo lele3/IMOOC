@@ -1,0 +1,307 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+.box{
+	width: 80%;
+	margin: 0 auto;
+}	
+header{
+	margin-top:70px; 
+	margin-bottom: -20px;
+	width: 100%;
+	overflow: hidden;
+}
+.header_left{
+	float: left;
+}
+.header_left p{
+	font-size: 18px;
+	font-weight: bold;
+}
+.header_right{
+	float: right;
+	margin-right: 20px;
+	transition:all 0.7s;
+}
+.header_right:hover{
+	transform:translateX(20px);
+}
+.main_top,.main_mid,.main_bottom{
+	width: 100%;
+	overflow: hidden;
+}
+.main_top,.main_bottom{
+	height: 20px;
+}
+.main ul li{
+	text-align: center;
+}
+.main ul li:nth-child(1) a{
+	display: inline-block;
+	color: #FFF;
+	width: 40px;
+	height: 20px;
+	background: #BE3948;
+}
+.main ul{
+	width: 100%;
+	overflow: hidden;
+	margin-top: -20px;
+}
+.main li{
+	float:left;
+	margin-left: 50px;
+	margin-bottom: 20px;
+	list-style-type: none;	
+}
+.main_mid{
+	margin-bottom: -30px;
+}
+.main li a:link,.main a:visited{
+	color:#000;
+	/*border:1px solid;*/
+	text-decoration: none;
+}	
+.main li a:hover,.main li a:active{
+
+	display: inline-block;
+	color: red;
+	text-decoration:none;
+}
+
+section header{
+	margin-top: -10px;
+	height: 40px;
+	padding-left: 10px;
+	padding-top: 10px;
+	background: #f9f9f9;
+}
+.section_main li{
+	float:left;
+	list-style-type: none;
+}
+.section_main li:hover{
+	box-shadow: 5px 5px 5px #CCC;
+}
+.section_main li .span{
+	color:#fff;
+}
+
+.s_header_left{
+	float: left;
+}
+.s_header_left span:nth-child(1){
+	display: inline-block;
+	margin-right: 30px;
+}
+.s_header_right{
+	float:right;
+}
+.block{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	line-height: 19px;
+	background: #eee;
+	cursor: pointer;
+	border:1px solid #666;
+}
+.section_main{
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+	margin-left: 38px;
+}
+.section_main p{
+	font-size: 12px;
+	color: #ccc;
+}
+
+.section_main li{
+	width: 260px;
+	margin-top: 50px;
+	margin-bottom: 10px;
+}
+.section_main_top{
+	position: relative;
+}
+.section_main_top span{
+	position: absolute;
+	top:0;
+	right: 10px;
+	/*width: 0;
+	height: 0;
+	font-size: 0px;*/
+	transform:scale(0);
+	transform-origin:right;
+	transition:all 0.3s;
+}
+.section_main li:hover .span{
+	display:inline-block;
+	/*width: 135px;
+	height: 20px;
+	font-size: 14px;*/
+	transform-origin:right;
+	transform:scale(1);
+	background: rgba(55,55,55,0.7) ;
+}
+.section_main_bottom{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.section_main_bottom span:nth-child(3){
+	display: inline-block;
+	/*border: 1px solid;*/
+	padding-right: 50px;
+}
+.page{
+	height: 100px;
+	margin-top: 50px;
+	text-align: center;
+}
+.page ul{
+	display: inline-block;
+	text-align: center;
+	overflow: hidden;
+}
+.page li{
+	float: left;
+	display: inline;
+	width: 66px;
+	text-align: center;
+	list-style-type: none;
+}
+.page li a{
+	display: inline-block;
+	width: 60px;
+	color: #666;
+	border:1px solid;
+}
+.page li a:hover{
+	background: #BE3948;
+	color: #fff;
+	text-decoration: none;
+
+}
+#footer{
+	margin-top: 20px;
+	height: 99px;
+	background: #000;
+	color:#787d82;
+}
+#footer .left{
+	float: left;
+	padding:20px 0px;
+	margin-left: 30px;
+}
+#footer .left ul li{
+	display: inline-block;
+	margin-right: 20px;
+}
+#footer .left ul li a{
+	display: block;
+	width: 48px;
+	height: 23px;
+	font-size: 12px;
+	text-decoration: none;
+	color:#c8cdd2;
+}
+#footer .left ul li a:hover{
+	color:#fff;
+}
+#footer .right{
+	width: 162px;
+	padding:20px 0;
+	float: right;
+	margin-right: 30px;
+}
+#footer .right a{
+	opacity: 0.5;
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	margin-left:6px;
+	transition:all .3s;
+}
+#footer .right .weixin{
+	position: relative;
+	background: url(../imgs/footer-sprite.png) no-repeat 0 -279px;
+}
+#footer .right .weibo{
+	background: url(../imgs/footer-sprite.png) no-repeat 0 -321px;
+}
+#footer .right .qq{
+	background: url(../imgs/footer-sprite.png) no-repeat 0 -363px;
+}
+#footer .right .weixin:hover{
+	opacity: 1;
+}
+#footer .right .weixin:hover .weixin-tip{
+	display: block;
+}
+#footer .right .weibo:hover{
+	opacity: 1;
+}
+#footer .right .qq:hover{
+	opacity: 1;
+}
+#footer .right .weixin .weixin-tip{
+	width: 170px;
+	height: 220px;
+	position: absolute;/*必须加*/
+	left: -69px;
+	bottom: 35px;
+	background: url(../imgs/footer-sprite.png) no-repeat 0 0;
+	display: none;
+}
+
+
+#goto-top1{
+	position: fixed;
+	bottom: 10px;
+	right: 15px;
+	width: 52px;
+	min-height: 160px;
+}
+#goto-top1 a{
+	position: relative;
+	display: block;
+	width: 52px;
+	height: 52px;
+	transition:all .3s;
+	background: url(../imgs/elevator.png) no-repeat;
+}
+#goto-top1 .weixin{
+	background-position: 0 -860px;
+}
+#goto-top1 .msg{
+	background-position: 0 -426px;
+}
+#goto-top1 .app{
+	background-position: 0 -550px;
+}
+#goto-top1 .top{
+	background-position: 0 -674px;
+}
+#goto-top1 .weixin:hover{
+	background-position: 0 -922px;/*从原来位置移开*/
+}
+#goto-top1 .weixin:hover .weixin-tip{
+	opacity: 1;/*透明度*/
+	transform: scale(1);
+			
+}
+#goto-top1 .weixin .weixin-tip{
+	position: absolute;/*绝对定位*/
+	right: 46px;
+	bottom: -10px;
+	width: 172px;
+	height: 212px;
+	opacity: 0;/*透明*/
+	transform: scale(0.01);/*缩小*/
+	background: url(../imgs/elevator.png) no-repeat 0 0;
+	transition:all .3s;/*转变 0.3秒动画效果*/
+}

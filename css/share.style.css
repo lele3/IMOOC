@@ -1,0 +1,318 @@
+#footer{
+      margin-top: 200px;
+      height: 99px;
+      background: #000;
+      color:#787d82;
+    }
+    #footer .left{
+      float: left;
+      padding:20px 0px;
+      margin-left: 160px;
+    }
+    #footer .left ul li{
+      display: inline-block;
+      margin-right: 20px;
+    }
+    #footer .left ul li a{
+      display: block;
+      width: 48px;
+      height: 23px;
+      font-size: 12px;
+      text-decoration: none;
+      color:#c8cdd2;
+    }
+    #footer .left ul li a:hover{
+      color:#fff;
+    }
+    #footer .right{
+      width: 162px;
+      padding:20px 0;
+      
+      float: right;
+      margin-right: 30px;
+    }
+    #footer .right a{
+      opacity: 0.5;
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      margin-left:6px;
+      transition:all .3s;
+    }
+    #footer .right .weixin{
+      position: relative;
+      background: url(../imgs/footer-sprite.png) no-repeat 0 -279px;
+    }
+    #footer .right .weibo{
+      background: url(../imgs/footer-sprite.png) no-repeat 0 -321px;
+    }
+    #footer .right .qq{
+      background: url(../imgs/footer-sprite.png) no-repeat 0 -363px;
+    }
+    #footer .right .weixin:hover{
+      opacity: 1; 
+    }
+    #footer .right .weixin:hover .weixin-tip{
+      display: block;
+    }
+    #footer .right .weibo:hover{
+      opacity: 1;
+    }
+    #footer .right .qq:hover{
+      opacity: 1; 
+    }
+    #footer .right .weixin .weixin-tip{
+      width: 170px;
+      height: 220px;
+      position: absolute;/*必须加*/
+      left: -69px;
+      bottom: 35px;
+      background: url(../imgs/footer-sprite.png) no-repeat 0 0;
+      display: none;
+    }
+    #footer .right .qq .qq-tip{
+      width: 170px;
+      height: 220px;
+      position: absolute;/*必须加*/
+      left: -69px;
+      bottom: 35px;
+      background: url(../imgs/mk-down-qrcode.png) no-repeat 0 0;
+      display: none;
+    }
+  
+    #goto-top1{
+        position: fixed;
+        bottom: 10px;
+        right: 15px;
+        width: 52px;
+        min-height: 160px;
+      }
+      #goto-top1 a{
+        position: relative;
+        display: block;
+        width: 52px;
+        height: 52px;
+        transition:all .3s;
+        background: url(../imgs/elevator.png) no-repeat;
+      }
+      #goto-top1 .weixin{
+        background-position: 0 -860px;
+      }
+      #goto-top1 .msg{
+        background-position: 0 -426px;
+      }
+      #goto-top1 .app{
+        background-position: 0 -550px;
+      }
+      #goto-top1 .top{
+        background-position: 0 -674px;
+      }
+      #goto-top1 .weixin:hover{
+        background-position: 0 -922px;/*从原来位置移开*/
+      }
+      #goto-top1 .weixin:hover .weixin-tip{
+        opacity: 1;/*透明度*/
+        transform: scale(1);
+      
+      }
+      #goto-top1 .weixin .weixin-tip{
+        position: absolute;/*绝对定位*/
+        right: 46px;
+        bottom: -10px;
+        width: 172px;
+        height: 212px;
+        opacity: 0;/*透明*/
+        transform: scale(0.01);/*缩小*/
+        background: url(../imgs/elevator.png) no-repeat 0 0;
+        transition:all .3s;/*转变 0.3秒动画效果*/
+      }
+      #goto-top1 .app:hover{
+        background-position: 0 -612px;/*从原来位置移开*/
+      }
+      #goto-top1 .app:hover .app-tip{
+        opacity: 1;/*透明度*/
+        transform: scale(1);
+      
+      }
+      #goto-top1 .app .app-tip{
+        position: absolute;/*绝对定位*/
+        right: 46px;
+        bottom: -10px;
+        width: 172px;
+        height: 212px;
+        opacity: 0;/*透明*/
+        transform: scale(0.01);/*缩小*/
+        background: url(../imgs/index2-sprite.png) no-repeat 0 0;
+        transition:all .3s;/*转变 0.3秒动画效果*/
+      }
+  
+  
+  .parallax-bg {
+  position: absolute;
+  
+  top: 50px;
+  width: 100%;
+  height: 30%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  }
+  
+  .swiper-slide {
+  text-align: center;
+  font-size: 35px;
+  color: #fff;
+  margin-top: 140px;
+  }
+  .share-x{
+  margin-left: 495px;
+  }
+  .share-x ul li{
+  display: block;
+  float: left;
+  opacity:  0.8;
+  border-bottom: 1px solid rgba(255,255,255,.2);
+  transition: all 0.3;
+  }
+  .share-class{
+  height: 61px;
+  width: 80%;
+  margin-top: 32%;
+  border-bottom: 2px solid #ccc;
+  line-height: 10px;
+  }
+  .course-list li{
+  display: block;
+  width: 280px;
+  height: 270px;
+  padding:20px;
+  float: left;
+  margin-top: 20px;
+  margin-left: 5px;
+  }
+  .course-list li a{
+  position: relative;
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  }
+  .course-list li a h4{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+  color:#14191e;
+  font-weight: bold;
+  }
+  .course-list li a p{
+  font-size: 12px;
+  color:#ccc;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  }
+  .course-list li a span:first-of-type{
+  color:#444;
+  }
+  .course-list li a span:nth-of-type(2){
+  color:#444;
+  margin-left: 20px;
+  }
+  .course-list li a .tip{
+  font-size: 12px;
+  color:#fff;
+  background: rgba(0,0,0,0.5);
+  display: block;
+  height: 20px;
+  width: 120px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 100;
+  position: absolute;
+  right: -20px;
+  top:0px;
+  transition:all 0.3s;
+  opacity: 0;
+  
+  }
+  .course-list li:hover .tip{
+  right: 0px;
+  opacity: 1;
+  }
+  .course-list li:hover{
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+      
+.fenye{
+  width: 80%;
+  text-align: center;
+  margin-top: 10px;
+  height: 10px;
+  padding: 10px 0px;
+  
+}
+.fenye span{
+  font-size: 14px;
+  margin-right: 8px;
+}
+.fenye a{
+  font-size: 14px;
+  display: inline-block;
+  padding: 0 8px;
+  border-bottom: 1px solid #fff;
+  color:#666;
+  text-decoration: none;
+  height: 30px;
+  line-height: 30px;
+}
+.fenye a:hover{
+  border-bottom: 1px solid #cc0000;
+  color:#cc0000;
+}
+.fenye .shouye,.fenye .prev-page{
+  color:#ccc;
+}
+.fenye a:nth-of-type(1){
+  color:#fff;
+  background: #cc0000;
+  border-bottom: 1px solid #cc0000;
+}
+.share-right{
+  margin-top: 19%;
+  width: 30%;
+  float: right;
+  color: #14191e;
+}
+
+.share-right ul {
+  margin-right: 0px;
+  padding: 0px 16px;
+}
+.share-right .course-header{
+  margin-left: 10px; 
+  border-bottom: 2px solid #ccc;
+}
+.share-right ul li{
+  width: 240px;
+  display: block;
+  margin-top: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+.share-right ul li h1{
+  font-size: 16px;
+  font-weight: bold;
+
+}
+.share-right ul li p{
+  font-size: 14px;
+  color:#666;
+}
+.share-right .hezuo li{
+  border-bottom: none;
+}
+.share-right .haha {
+  margin-left: 10px; 
+  border-bottom: 1px solid #ccc;
+}

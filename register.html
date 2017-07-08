@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+	<link rel="stylesheet" href="./css/register.css">
+</head>
+<body>
+	<div class="main">
+
+		<div class="head">
+			<div class="pic">
+
+			</div>
+		</div>
+		<div class="register">
+			<form id="" method="post" action="/IMOOC/RegisterServlet">
+				<div class="account">
+				<h1>注册</h1>
+			
+					<div class="name">
+						<input type="text"  name = 'username' placeholder="please input your username">
+					</div>
+					<div class="pwd">
+						<input type="password" name = 'password' placeholder="please input your password">
+					</div>
+			
+				</div>
+				<button class="btn1" onclick="this.form.submit()">确定</button>
+			</form>
+			<button id = 'btn1'class="btn1" id="btn2" onclick = ''>已有账号去登录
+			</button>
+			<div class="footer">
+
+			</div>
+		</div>
+		<!-- <div class="register2">
+			<div class="account">
+				<h1>登录</h1>
+				<div class="name">
+					<input type="text" placeholder="please input your username">
+				</div>
+				<div class="pwd">
+					<input type="password" placeholder="please input your password">
+				</div>
+			</div>
+			<button class="btn1">确定
+			</button>
+			<button class="btn1" id="btn3">没有账号去注册
+			</button>
+			<div class="footer">
+
+			</div>
+		</div> -->
+	</div>
+	   <script src="js/jquery.js"></script>
+	   <script>
+	// 	$("#btn2").click(function() {
+	// 		$(".register").hide();
+	// 		$(".register2").show();
+	// 	})
+	// 	$("#btn3").click(function() {
+	// 		$(".register2").hide();
+	// 		$(".register").show();
+	// 	});
+		var btn1 = document.getElementById('btn1');
+		btn1.onclick = function(){
+			window.location.href="http://localhost:9090/IMOOC/login.html";
+		}
+
+
+	  </script>
+</body>
+</html>
